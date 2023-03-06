@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karate Council</title>
+
+    <link href="smalllogo.png" rel="icon">
+    <link href="logo.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="comingsoon">
+        <div class="text" id="loader">
+            <p>Website Coming <span>Soon..</span></p>
+         </div>
+         <script>
+            let loaderText = document.querySelector('#loader p');
+            let messageCount = 0;
+            let messages = [
+            ' W ',
+		 ' We ',
+		 ' Web ',
+		 ' Webs ',
+		 ' Websi ',
+		 ' Websit ',
+		 ' Website ',
+		 ' Website  ',
+		 ' Website C ',
+		 ' Website Co ',
+		 ' Website Com ',
+		 ' Website Comi ',
+		 ' Website Comin ',
+		 ' Website Coming ',
+		 ' Website Coming  ',
+		 ' Website Coming S ',
+		 ' Website Coming So ',
+		 ' Website Coming Soo ',
+		 ' Website Coming Soon ',
+		 ' Website Coming Soon. ',
+		 ' Website Coming Soon.. ',
+            ];
+            
+            function loader(){
+               messageCount++;
+               if(messageCount >= messages.length){
+                  messageCount = 0;
+               } 
+               loaderText.textContent = messages[messageCount];
+            }
+            
+            setInterval(loader, 200);
+         </script>
+    </div>
+    <div class="between"></div>
+    <div>
+        <img class="image" src="image1-removebg.png" alt="karate_flykick">
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
