@@ -1,62 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karate Council</title>
+<html>
 
-    <link href="smalllogo.png" rel="icon">
-    <link href="logo.png" rel="apple-touch-icon">
-    <link rel="stylesheet" href="style.css">
+<head>
+  <title>KarateCouncil</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body,
+    h1 {
+      font-family: "Raleway", sans-serif;
+      -webkit-text-stroke-color: black;
+      -webkit-text-stroke-width: 1px;
+    }
+
+    body,
+    html {
+      height: 100%
+    }
+
+    .bgimg {
+      background-image: url("https://www.kcpinternational.com/wp-content/uploads/2021/08/Karate-fighters-1024x655.jpg");
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="comingsoon">
-        <div class="text" id="loader">
-            <p>Website Coming <span>Soon..</span></p>
-         </div>
-         <script>
-            let loaderText = document.querySelector('#loader p');
-            let messageCount = 0;
-            let messages = [
-            ' W ',
-		 ' We ',
-		 ' Web ',
-		 ' Webs ',
-		 ' Websi ',
-		 ' Websit ',
-		 ' Website ',
-		 ' Website  ',
-		 ' Website C ',
-		 ' Website Co ',
-		 ' Website Com ',
-		 ' Website Comi ',
-		 ' Website Comin ',
-		 ' Website Coming ',
-		 ' Website Coming  ',
-		 ' Website Coming S ',
-		 ' Website Coming So ',
-		 ' Website Coming Soo ',
-		 ' Website Coming Soon ',
-		 ' Website Coming Soon. ',
-		 ' Website Coming Soon.. ',
-            ];
-            
-            function loader(){
-               messageCount++;
-               if(messageCount >= messages.length){
-                  messageCount = 0;
-               } 
-               loaderText.textContent = messages[messageCount];
-            }
-            
-            setInterval(loader, 200);
-         </script>
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+      <img style="height: 30%; width: 30%;" src="shotokan_logo.png" alt="logo">
     </div>
-    <div class="between"></div>
-    <div>
-        <img class="image" src="image1-removebg.png" alt="karate_flykick">
-        <script src="script.js"></script>
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-animate-top">WEBSITE COMING SOON</h1>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <p style="-webkit-text-stroke: 0.6px;" class="w3-large w3-center">Designing on progress</p>
     </div>
+    <div class="w3-display-bottomleft w3-padding-large">
+      Powered by <a href="https://www.karatecouncil.com" target="_blank">KarateCouncil</a>
+    </div>
+  </div>
+
 </body>
+
 </html>
